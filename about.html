@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link type="image/x-icon" href="/logo.png" rel="icon">
+    <title>About Us</title>
+    <style>
+        .logo {
+            width: 5em; 
+            height: auto;  
+        }
+        .ff {
+            font-family: 'Playfair Display', serif;
+        }
+        .a {
+            text-decoration: none !important;
+        }
+        .f {
+            font-family: 'Raleway', sans-serif;
+        }
+        .nav-item {
+            margin-left: 2.5em !important; 
+        }
+        .navbar {
+            height: 6em;
+        }
+        #logo {
+            height: 3em;
+            width: 3em;
+        }
+        .b {
+            height: 3em;
+            width: 10em;
+            margin-right: 2em;
+        }
+        @media (max-width: 767px) {
+            #homeimg {
+                display: none;
+            }
+        }
+        .btn-container {
+            display: flex;
+            align-items: center;
+        }
+        .img-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div> 
+        <nav class="navbar navbar-expand-lg bg-body">
+            <div class="container">
+                <a class="navbar-brand" href="/"><img class="logo" src="/logo.png" alt="Logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item f">
+                            <a class="nav-link active fw-bold" aria-current="page" href="/">Home</a>
+                        </li>
+                        <li class="nav-item f fw-bold">
+                            <a class="nav-link" href="/shop.html">Shop</a>
+                        </li>
+                        <li class="nav-item f fw-bold">
+                            <a class="nav-link" href="#" onclick="openGmailCompose('ashmitmahindroo155@gmail.com'); return false;">Contact</a>
+                        </li>
+                        <li class="nav-item f fw-bold">
+                            <a class="nav-link" href="/about.html">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <script>
+        function openGmailCompose(email) {
+            var subject = '';  
+            var body = '';     
+            var url = 'https://mail.google.com/mail/?view=cm&fs=1' +
+                      '&to=' + encodeURIComponent(email) +
+                      '&su=' + encodeURIComponent(subject) +
+                      '&body=' + encodeURIComponent(body);
+            window.open(url, '_blank');
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<div class="container">
+<h1 class="fw-bold text-center ff">About Us</h1>
+<section>
+    <h2 class="ff mb-3 mt-2 ml-3">WHY US?</h2>
+    <h3 class="ff mb-3 mt-2 ml-3">Problem 1:</h3>
+    <p class="f fw-bold">These days, there are tons of people being diagnosed with serious ailments with serious repercussions. Well, with the built in heart and SpO2 sensors,  present in our vests, you don’t need to worry. Our team has stitched a state of the art electrical chip inside the vest which has an AI which monitors your body and sends its vitals to your smart devices. And, if you are ever in danger , are AI automatically sends an automated call from your phone to emergency services, informing them of the problem at hand. And best of all, no need to worry about ruining the vest, because it is waterproof, with an IPX5 rating, protecting it from low pressure water streams from any angle. So wearing it in rain is NOT an issue. 
+    </p>
+    <h3 class="ff mb-3 mt-2 ml-3">Problem 2:</h3>
+    <p class="f fw-bold">Well, we know that one can’t be wearing the same vest for every weather condition, so we engineered three variants to this special vest: Normal, Warm and Extra Warm. Now, you can take care of yourself throughout the year! 
+    </p>
+</section>
+
+<section>
+    <h2 class="ff mb-3">Our Values</h2>
+    <ul class="f fw-bold">
+        <li>Empowerment: We believe in empowering individuals by providing access to job opportunities and resources that enable career growth.</li>
+        <li>Inclusivity: We are committed to fostering an inclusive environment where everyone has equal access to opportunities, regardless of their background or circumstances.</li>
+        <li>User-Centric: Our users are at the heart of everything we do. We listen to their feedback and improve our platform to meet their needs.</li>
+        <li>Privacy & Security: We prioritize the privacy and security of our users' personal information. We implement robust measures to protect their data and ensure a safe browsing experience.</li>
+    </ul>
+</section>
+<h4>This is a business made by Ashmit Mahindroo and Ishaan Kapoor</h4>
+</div>
